@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="materialize/css/materialize.css"/>
 </head>
 <body ng-controller="MainCtrl">
-    <div class="container">
-        <div class="row">
+
+<!--        <div class="row">
             <div class="navigation">
                 <ul class="list-inline list-unstyled">
                     <li ng-repeat="component in navigation">
@@ -17,9 +18,24 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <img src="img/zub.png" alt="" style="position: absolute;top:0;left:0;z-index:9999;width:200px;height:auto;"/>
+        </div>-->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down list-unstyled">
+                    <li ng-repeat="component in navigation">
+                        <a href="{{ component.url }}">{{ component.name }}</a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li ng-repeat="component in navigation">
+                        <a href="{{ component.url }}">{{ component.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <img class="brand-logo left" src="img/zub.png" alt="" style="position: absolute;top:0;left:0;z-index:9999;max-width:200px;height:auto;"/>
     <div ng-view ></div>
     <footer class="footer">
         <div class="col-lg-9">
@@ -52,4 +68,8 @@
 <script src="js/app.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>
 <script src="js/controllers/home.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script>
+    $(".button-collapse").sideNav();
+</script>
 </html>
