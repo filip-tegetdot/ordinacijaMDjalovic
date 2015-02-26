@@ -1,15 +1,15 @@
 {
   "imageSource": [
-    {"image":"../../OrdinacijaMarijaDjalovic/img/image1.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/image1.jpg",
      "text":"Neki tekst za prvu sliku"
     },
-    {"image":"../../OrdinacijaMarijaDjalovic/img/image2.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/image2.jpg",
       "text":"Neki tekst za drugu sliku"},
-    {"image":"../../OrdinacijaMarijaDjalovic/img/image3.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/image3.jpg",
       "text":"Neki tekst za trecu sliku"},
-    {"image":"../../OrdinacijaMarijaDjalovic/img/image4.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/image4.jpg",
       "text":"Neki tekst za cetvrtu sliku"},
-    {"image":"../../OrdinacijaMarijaDjalovic/img/image5.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/image5.jpg",
       "text":"Neki tekst za petu sliku"}
   ]
 }

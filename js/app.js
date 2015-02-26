@@ -7,20 +7,20 @@ var ordinacija = angular.module("MarijaDjalovic",["ngRoute","ui.bootstrap"]);
 ordinacija.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/',{
-            templateUrl: '../../OrdinacijaMarijaDjalovic/views/pocetna.html',
+            templateUrl: '../../OrdinacijaMDjalovic/views/pocetna.html',
             controller:'HomeCtrl'
         })
         .when('/ordinacija',{
-            templateUrl: '../../OrdinacijaMarijaDjalovic/views/ordinacija.html'
+            templateUrl: '../../OrdinacijaMDjalovic/views/ordinacija.html'
         })
         .when('/usluge',{
-            templateUrl: '../../OrdinacijaMarijaDjalovic/views/usluge.html'
+            templateUrl: '../../OrdinacijaMDjalovic/views/usluge.html'
         })
         .when('/pitanja',{
-            templateUrl: '../../OrdinacijaMarijaDjalovic/views/pitanjaISaveti.html'
+            templateUrl: '../../OrdinacijaMDjalovic/views/pitanjaISaveti.html'
         })
         .when('/kontakt',{
-            templateUrl:'../../OrdinacijaMarijaDjalovic/views/kontakt.html'
+            templateUrl:'../../OrdinacijaMDjalovic/views/kontakt.html'
         })
         .otherwise({
             redirectTo:'/'
