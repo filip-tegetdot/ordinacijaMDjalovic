@@ -19,39 +19,33 @@
                 </ul>
             </div>
         </div>-->
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="col-lg-2">
+            <img class="brand-logo left logo" src="img/zub.png" />
+            </div>
+            <div class="col-lg-8 naziv">
+            </div>
+        </div>
+        <div class="col-lg-8">
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                <ul class="right hide-on-med-and-down list-unstyled">
-                    <li ng-repeat="component in navigation">
+                <ul class="hide-on-med-and-down">
+                    <li ng-repeat="component in navigation" class="green-hue-{{ $index+1 }}">
                         <a href="{{ component.url }}">{{ component.name }}</a>
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li ng-repeat="component in navigation">
+                    <li ng-repeat="component in navigation" class="green-hue-{{ $index+1 }}">
                         <a href="{{ component.url }}">{{ component.name }}</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
-    <img class="brand-logo left" src="img/zub.png" alt="" style="position: absolute;top:0;left:0;z-index:9999;max-width:200px;height:auto;"/>
+        </div>
+    </div>
     <div ng-view ></div>
-    <footer class="footer">
-        <div class="col-lg-9">
-            <div class="col-lg-6">
-                <span>Kako do nas?</span>
-            </div>
-            <div class="col-lg-6">
-                <span>O nama</span>
-            </div>
-        </div>
-        <div class="col-lg-3">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-google-plus"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-    </footer>
 </body>
 <script src="lib/jquery-2.1.3.min.js"></script>
 <script src="lib/angular/angular.min.js"></script>

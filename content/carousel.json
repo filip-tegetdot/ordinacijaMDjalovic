@@ -1,15 +1,15 @@
 {
   "imageSource": [
-    {"image":"../../ordinacijaMDjalovic/img/image1.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/img1.jpg",
      "text":"Neki tekst za prvu sliku"
     },
-    {"image":"../../ordinacijaMDjalovic/img/image2.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/img2.jpg",
       "text":"Neki tekst za drugu sliku"},
-    {"image":"../../ordinacijaMDjalovic/img/image3.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/img3.jpg",
       "text":"Neki tekst za trecu sliku"},
-    {"image":"../../ordinacijaMDjalovic/img/image4.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/img4.jpg",
       "text":"Neki tekst za cetvrtu sliku"},
-    {"image":"../../ordinacijaMDjalovic/img/image5.jpg",
+    {"image":"../../ordinacijaMDjalovic/img/img5.jpg",
       "text":"Neki tekst za petu sliku"}
   ]
 }

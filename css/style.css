@@ -7,17 +7,127 @@ body {
     height: 100%;
     font-size: 2.68em;
     margin-bottom: 60px;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(246,246,246,1)), color-stop(100%, rgba(97,188,93,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
     background-color: #f5f5f5;
 }
 
 a:hover {
     text-decoration: none;
     color: #f5f5f5;
+}
+/*.green-hue-1 {*/
+    /*background: #213532;*/
+/*}*/
+/*.green-hue-2 {*/
+    /*background: #1b7368;*/
+/*}*/
+/*.green-hue-3 {*/
+    /*background: #2e857b;*/
+/*}*/
+/*.green-hue-4 {*/
+    /*background: #5dae9c;*/
+/*}*/
+/*.green-hue-5 {*/
+    /*background: #b2dcd6;*/
+/*}*/
+nav {
+    background: transparent !important;
+    /*background: -moz-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    /*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.96)), color-stop(55%, rgba(96,196,122,0.96)), color-stop(74%, rgba(41,176,76,0.98)), color-stop(100%, rgba(97,188,93,1)));*/
+    /*background: -webkit-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    /*background: -o-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    /*background: -ms-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
+}
+nav ul {
+    margin-left:110px !important;
+}
+nav ul li{
+    margin-left:50px !important;
+}
+nav ul a {
+    font-size: 1.5rem !important;
+    color:rgba(97,188,93,1) !important;
+}
+.boxShadow{
+    -webkit-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
+    -moz-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
+    box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
+}
+.wave{
+    height:167px;
+    background-image: url("../../ordinacijaMDjalovic/img/wave.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-border-radius: 6px 200px 14px 0px;
+    -webkit-border-radius: 6px 200px 14px 0px;
+    border: 0 solid #000000;
+    margin-top:-110px;
+    position:relative;
+    z-index: 9999;
+}
+.logo{
+    position: absolute;
+    top:10px;
+    left:0;
+    z-index:9999;
+    max-width:200px;
+    height:95px;
+}
+.naziv{
+    background-image: url("../../ordinacijaMDjalovic/img/marijadj.png");
+    background-size: contain;
+    height:113px;
+    background-repeat: no-repeat;
+}
+.box{
+    background-image: url("../../ordinacijaMDjalovic/img/box.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:600px;
+    position:relative;
+    top:-100px;
+    z-index:9999;
+}
+.textInTeeth{
+    top:200px;
+    left:215px;
+}
+.socials>div{
+    margin-right:20px;
+}
+.socials>div i {
+    margin-left:40px;
+}
+.face{
+    color:#3A5795;
+    cursor: pointer;
+    font-size:60px !important;
+}
+.gplus{
+    color:#DD4E42;
+    cursor: pointer;
+    font-size:60px !important;
+}
+.ln{
+    color:#0077B5;
+    font-size:60px !important;
+    cursor: pointer;
+}
+.face:hover, .gplus:hover, .ln:hover{
+    color:white;
+    font-size:70px;
 }
