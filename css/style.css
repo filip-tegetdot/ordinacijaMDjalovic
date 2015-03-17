@@ -85,21 +85,19 @@ nav ul a {
     left:0;
     z-index:9999;
     max-width:200px;
-    height:95px;
 }
 .naziv{
     background-image: url("../../ordinacijaMDjalovic/img/marijadj.png");
     background-size: contain;
-    height:113px;
+    height:164px;
     background-repeat: no-repeat;
 }
 .box{
     background-image: url("../../ordinacijaMDjalovic/img/box.png");
     background-repeat: no-repeat;
     background-size: contain;
-    height:600px;
+    min-height:250px;
     position:relative;
-    top:-100px;
     z-index:9999;
 }
 .textInTeeth{
@@ -130,4 +128,31 @@ nav ul a {
 .face:hover, .gplus:hover, .ln:hover{
     color:white;
     font-size:70px;
+}
+.elipsa{
+    border-top-left-radius: 100%;
+    background-color:red;
+    height:410px;
+    float:right;
+}
+.elipsa2{
+    background-color: #004d40;
+    border-radius: 15px;
+    height: 55px;
+    opacity: 0.6;
+    position: absolute;
+    top: 30%;
+    width: 65.5%;
+    z-index: 2;
+}
+.menu{
+    border:2px #00796b solid;
+    border-radius: 12px;
+    background-color: #a1887f;
+}
+.contain{
+    height:400px;
+    position:relative;
+    top:-5%;
+    padding:0;
 }
