@@ -5,7 +5,7 @@ html {
 
 body {
     height: 100%;
-    font-size: 2.68em;
+    font-size: 1em;
     margin-bottom: 60px;
     background: rgba(255,255,255,1);
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
@@ -27,45 +27,33 @@ a:hover {
     text-decoration: none;
     color: #f5f5f5;
 }
-/*.green-hue-1 {*/
-    /*background: #213532;*/
-/*}*/
-/*.green-hue-2 {*/
-    /*background: #1b7368;*/
-/*}*/
-/*.green-hue-3 {*/
-    /*background: #2e857b;*/
-/*}*/
-/*.green-hue-4 {*/
-    /*background: #5dae9c;*/
-/*}*/
-/*.green-hue-5 {*/
-    /*background: #b2dcd6;*/
-/*}*/
 nav {
-    background: transparent !important;
-    /*background: -moz-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
-    /*background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.96)), color-stop(55%, rgba(96,196,122,0.96)), color-stop(74%, rgba(41,176,76,0.98)), color-stop(100%, rgba(97,188,93,1)));*/
-    /*background: -webkit-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
-    /*background: -o-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
-    /*background: -ms-linear-gradient(top, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
-    /*background: linear-gradient(to bottom, rgba(255,255,255,0.96) 0%, rgba(96,196,122,0.96) 55%, rgba(41,176,76,0.98) 74%, rgba(97,188,93,1) 100%);*/
+    background-color: #5FB245 !important;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
 }
-nav ul {
-    margin-left:110px !important;
-}
 nav ul li{
-    margin-left:50px !important;
+    border-right: 1px solid #7dc466;
+}
+.centered{
+    display:block;
+    margin: 0 auto;
+    float:none;
 }
 nav ul a {
     font-size: 1.5rem !important;
-    color:rgba(97,188,93,1) !important;
 }
+.selectedNav {
+    color:#5FB245 !important;
+    text-shadow: 1px 1px #00070F;
+    text-decoration: underline !important;
+    background-color:white;
+}
+
 .boxShadow{
     -webkit-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
     -moz-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
     box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
+    border-radius:10px;
 }
 .wave{
     height:167px;
@@ -85,24 +73,65 @@ nav ul a {
     left:0;
     z-index:9999;
     max-width:200px;
+    height:150px;
+}
+.header-contact{
+    position:relative;
+    top:80px;
+    float: right;
+    background: #f1f2f4 url(../img/sprite.png) no-repeat 13px -965px;
+    padding: 0 0 0 50px;
+    margin: -3em 0 1em;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
+    -moz-box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
+    box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.header-contact ul{
+    padding:0;
+    margin:0;
+}
+.header-contact ul li {
+    padding: 0.25em 1em 0.25em 0;
+    margin: 0;
+    list-style-image: none;
+    border-bottom: 1px solid #e3e5e9;
+}
+.header-contact ul li span {
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 0.785em;
+    text-transform: uppercase;
+    padding: 0 0 0 1em;
 }
 .naziv{
     background-image: url("../../ordinacijaMDjalovic/img/marijadj.png");
     background-size: contain;
-    height:164px;
+    height:200px;
     background-repeat: no-repeat;
 }
 .box{
     background-image: url("../../ordinacijaMDjalovic/img/box.png");
     background-repeat: no-repeat;
     background-size: contain;
-    min-height:250px;
+    height:600px;
     position:relative;
+    top:-100px;
     z-index:9999;
 }
 .textInTeeth{
     top:200px;
     left:215px;
+}
+.socials{
+    position:absolute;
+    bottom:0;
+    left:0;
 }
 .socials>div{
     margin-right:20px;
@@ -129,30 +158,36 @@ nav ul a {
     color:white;
     font-size:70px;
 }
-.elipsa{
-    border-top-left-radius: 100%;
-    background-color:red;
-    height:410px;
-    float:right;
+.contactField{
+    position:fixed;
+    bottom:0;
+    right:10px;
+    width:300px;
+    height:300px;
+    background:rgba(37,125,113,1);
 }
-.elipsa2{
-    background-color: #004d40;
-    border-radius: 15px;
-    height: 55px;
-    opacity: 0.6;
-    position: absolute;
-    top: 30%;
-    width: 65.5%;
-    z-index: 2;
+.contact-footer{
+    background: url(../../ordinacijaMDjalovic/img/contact-footer-bg.png) top center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
 }
-.menu{
-    border:2px #00796b solid;
-    border-radius: 12px;
-    background-color: #a1887f;
+.slider ul.slides li img{
+    border-radius: 10px;
 }
-.contain{
-    height:400px;
-    position:relative;
-    top:-5%;
-    padding:0;
+.slider ul.slides {
+    background-color:inherit !important;
+}
+.card.small .card-content {
+    height: 50px !important;
+    padding:0 !important;
+}
+.card.small .card-image {
+    height: 250px !important;
+}
+.light-green-darker{
+    background-color: #528e4c !important;
 }

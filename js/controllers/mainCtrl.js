@@ -9,5 +9,8 @@ ordinacija.controller("MainCtrl",['$scope',function($scope){
         {name:'Pitanja i Saveti',url:"#/pitanja"},
         {name:'Usluge',url:"#/usluge"},
         {name:'Kontakt',url:"#/kontakt"},
-    ]
+    ];
+    $scope.selectNav = function(navItem){
+        $scope.selectedItem = navItem;
+    }
 }]);

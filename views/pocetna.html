@@ -9,7 +9,7 @@
     </slide>
 </carousel>-->
 <div class="slider boxShadow">
-    <ul class="slides">
+    <ul class="slides" style="width:1000px">
         <li>
             <img src="../../ordinacijaMDjalovic/img/img10.jpg"> <!-- random img -->
             <div class="caption center-align">
@@ -47,8 +47,43 @@
         </li>
     </ul>
 </div>
+<!--<div class="row">
+    <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Card Title</span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href='#'>This is a link</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../../ordinacijaMDjalovic/img/image10.jpg">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+    </div>
+</div>-->
 <script>
     $(document).ready(function () {
-        $('.slider').slider({full_width: true, height: 720, interval: 4000, transition: 1500,indicators:false});
+        $('.slider').slider({full_width: false, height: 650, interval: 4000, transition: 1500, indicators: false});
+        $('.modal-trigger').leanModal();
+    });
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+
     });
 </script>
