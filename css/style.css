@@ -190,4 +190,47 @@ nav ul a {
 }
 .light-green-darker{
     background-color: #528e4c !important;
+
+}
+.radius20{
+    border-radius:20px !important;
+}
+.bottom {
+    top: 65% !important;
+}
+.location {
+    background: url(../../ordinacijaMDjalovic/img/mapa-ordinacije.png) no-repeat;
+    background-size: cover;
+}
+.card-min-height{
+    min-height:225px;
+}
+.pull-down{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+}
+.spec-green{
+    color:#528e4c !important;
+}
+.card-background{
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(246,246,246,1)), color-stop(100%, rgba(97,188,93,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
+    border-radius: 20px;
+    color:#A1DCE3 !important;
+}
+.checklist{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 60px;
+}
+.ceo{
+    width:80px;
 }
