@@ -13,4 +13,5 @@ ordinacija.controller("MainCtrl",['$scope',function($scope){
     $scope.selectNav = function(navItem){
         $scope.selectedItem = navItem;
     }
+    $scope.subNavItems = ["Dijagnostika","Estetska hirurgija","Decja preventivna hirurgija","Paradontologija","Stolatoloska protetika","implatanti","Oralna hirurgija","Ozon","Ortodoncija","Izbeljivanje"];
 }]);

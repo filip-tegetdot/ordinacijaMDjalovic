@@ -9,99 +9,66 @@
     <link rel="stylesheet" href="materialize/css/materialize.css"/>
 </head>
 <body ng-controller="MainCtrl">
-<div class="row">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            <div class="col-lg-6 centered">
-                <ul class="hide-on-med-and-down" style="margin-left:17%;">
-                    <li ng-repeat="component in navigation">
-                        <a href="{{ component.url }}" ng-click="selectNav(component.name)"
-                           ng-class="{'selectedNav':selectedItem == component.name}">{{ component.name }}</a>
-                    </li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li ng-repeat="component in navigation" class="green-hue-{{ $index+1 }}">
-                        <a href="{{ component.url }}">{{ component.name }}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="container">
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="col-lg-3">
-                    <img class="brand-logo left logo" src="img/zub.png" />
-                </div>
-                    <div class="col-lg-8 naziv">
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="header-contact">
-                    <ul>
-                        <li><strong>063/123-56-43</strong> <span>Mobilni</span></li>
-                        <li><strong>037/445-770</strong> <span style="float:right">Fiksni</span></li>
-                        <li>
-                            <button type="button" class="btn btn-default">Pošalji email</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-<!--    <div class="contactField">
-
-    </div>-->
-</div>
-<div class="container" ng-view></div>
-<div class="contact-footer">
+<div class="container">
     <div class="row">
-        <div class="col-lg-6 pull-right">
+        <div class="col-md-6 pull-right">
+            <ul class="pull-right nav nav-tabs">
+                <li ng-repeat="nav in navigation">
+                    <a href="{{ nav.url }}">{{ nav.name }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
             <div class="row">
-                <div class="col s12 m12">
-                    <div class="card light-green-darker card-background">
-                        <img class="checklist circle ceo" src="img/drpic.png" alt=""/>
-                        <div class="card-content white-text" style="margin-top:30px;">
-                            <span class="card-title" style="color:#528e4c;">Dr. Marija Djalović</span>
-                            <p>Pozdrav, ja sam Marija Djalović, doktor stomatologije i osnivač stomatološke ordinacije "Marija Djalović"</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Bigrafija</a>
-                        </div>
-                    </div>
+                <div class="col-md-3">
+                    <img src="img/logo.png"/>
                 </div>
-                <div class="col s12 m6">
-                    <div class="card light-green-darker location card-min-height">
-                        <div class="card-content white-text">
-                        </div>
-                        <div class="card-action pull-down">
-                            <p class="card-title spec-green">Kako do nas?</p>
-                            <p class="spec-green">Ovde možete pronaći najbliži put od nas!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6">
-                    <div class="card light-green-darker card-min-height">
-                        <div class="card-content white-text">
-                            <span class="card-title">O ordinaciji</span>
-                            <img class="checklist" src="img/history.png" alt=""/>
-                            <p>Ukoliko želite da saznate nešto više o nama, pročitajte naš istorijat</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">Istorijat</a>
-                        </div>
-                    </div>
+                <div class="col-md-9">
+                    <img src="img/marijadj.png"/>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 socials">
-            <div class="pull-left">
-                <i class="fa fa-facebook-square face"></i>
-                <i class="fa fa-google-plus-square gplus"></i>
-                <i class="fa fa-linkedin-square ln"></i>
+    </div>
+    <div class="row">
+        <div class="col-md-8">Centar estetske hirurgije</div>
+        <div class="col-md-4"><span class="pull-right">Slika zuba</span></div>
+    </div>
+    <div class="col-md-8 cetkica">
+        <img class="img-responsive" src="img/toothbrush.png" />
+    </div>
+    <div class="col-md-8 eliptical pull-right">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="pull-right">Kontakt</h1>
+            </div>
+            <div class="col-md-12 velikaSlika"></div>
+            <h5 class="pull-right">Nudimo vam besplatno savetovanje i prvi pregled</h5>
+            <div class="col-md-6 slikaLogoa">
+            </div>
+            <div class="col-md-6">
+                <h6 class="text-center"><b>Stomatoloska ordinacija Marija Djalovic</b></h6>
+                <p class="text-center">Kosovska 23, Krusevac</p>
+                <div class="center-block">
+                    <p class="text-center">Tel: 037/445-770</p>
+                    <p class="text-center">Mob: 065/123-45-67</p>
+                    <p><address class="text-center">Email: <a href="mailto:drmarijadjalovic@gmail.com">drmarijadjalovic@gmail.com</a></address></p>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="col-md-4 submeni">
+        <div ng-repeat="subnav in subNavItems">
+            <a href="#"><span>{{ subnav }}</span></a>
+            <hr ng-if="!$last"/>
+        </div>
+    </div>
+    <div class="col-md-8 wave pull-right">
+        <img src="img/whitewave.png" alt=""/>
+        <img src="img/teeth.png" class="teeth" alt=""/>
+    </div>
+    <div class="col-md-8 pull-right deepskyblue"></div>
 </div>
 </body>
 <script src="lib/jquery-2.1.3.min.js"></script>

@@ -1,236 +1,65 @@
-html {
+.nav-tabs {
+    border-bottom: 1px solid skyblue;
+}
+.eliptical{
+    background: deepskyblue;
+    height:952px;
+    border-top-left-radius: 92% 59%;
+    position:relative;
+    z-index: 1;
+    top:-650px;
+}
+.cetkica{
     position: relative;
-    min-height: 100%;
+    z-index: -1;
+    top:20px;
 }
-
-body {
-    height: 100%;
-    font-size: 1em;
-    margin-bottom: 60px;
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(246,246,246,1)), color-stop(100%, rgba(97,188,93,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
-}
-
-.footer {
-    bottom: 0;
-    width: 100%;
-    background-color: #f5f5f5;
-}
-
-a:hover {
+a:hover{
     text-decoration: none;
-    color: #f5f5f5;
 }
-nav {
-    background-color: #5FB245 !important;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
-}
-nav ul li{
-    border-right: 1px solid #7dc466;
-}
-.centered{
-    display:block;
-    margin: 0 auto;
-    float:none;
-}
-nav ul a {
-    font-size: 1.5rem !important;
-}
-.selectedNav {
-    color:#5FB245 !important;
-    text-shadow: 1px 1px #00070F;
-    text-decoration: underline !important;
-    background-color:white;
-}
-
-.boxShadow{
-    -webkit-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
-    -moz-box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
-    box-shadow: 19px -13px 24px -16px rgba(37,125,113,1);
-    border-radius:10px;
+.submeni{
+    background: -moz-linear-gradient(left,  rgba(232,218,199,0.45) 0%, rgba(255,255,255,0.66) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(232,218,199,0.45)), color-stop(100%,rgba(255,255,255,0.66))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(232,218,199,0.45) 0%,rgba(255,255,255,0.66) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(232,218,199,0.45) 0%,rgba(255,255,255,0.66) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(232,218,199,0.45) 0%,rgba(255,255,255,0.66) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(232,218,199,0.45) 0%,rgba(255,255,255,0.66) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73e8dac7', endColorstr='#a8ffffff',GradientType=1 ); /* IE6-9 */
+    border: 2px solid #c8eff3;
+    border-radius:7px;
 }
 .wave{
-    height:167px;
-    background-image: url("../../ordinacijaMDjalovic/img/wave.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    -moz-border-radius: 6px 200px 14px 0px;
-    -webkit-border-radius: 6px 200px 14px 0px;
-    border: 0 solid #000000;
-    margin-top:-110px;
-    position:relative;
-    z-index: 9999;
-}
-.logo{
-    position: absolute;
-    top:10px;
-    left:0;
-    z-index:9999;
-    max-width:200px;
-    height:150px;
-}
-.header-contact{
-    position:relative;
-    top:80px;
-    float: right;
-    background: #f1f2f4 url(../img/sprite.png) no-repeat 13px -965px;
-    padding: 0 0 0 50px;
-    margin: -3em 0 1em;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
-    -webkit-box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
-    -moz-box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
-    box-shadow: rgba(0,0,0,0.1) 1px 1px 1px 0;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-.header-contact ul{
+    top: -650px;
     padding:0;
-    margin:0;
+    background: deepskyblue;
 }
-.header-contact ul li {
-    padding: 0.25em 1em 0.25em 0;
-    margin: 0;
-    list-style-image: none;
-    border-bottom: 1px solid #e3e5e9;
+.wave img{
+    width:100%;
+    height: auto;
 }
-.header-contact ul li span {
-    font-family: 'Open Sans Condensed',sans-serif;
-    font-size: 0.785em;
-    text-transform: uppercase;
-    padding: 0 0 0 1em;
+.deepskyblue{
+    background: deepskyblue;
+    height:93px;
+    top:-650px;
 }
-.naziv{
-    background-image: url("../../ordinacijaMDjalovic/img/marijadj.png");
-    background-size: contain;
-    height:200px;
-    background-repeat: no-repeat;
+.teeth{
+    width:auto !important;
+    right:70px;
+    top:70px;
+    z-index: 9999;
+    position:absolute !important;
 }
-.box{
-    background-image: url("../../ordinacijaMDjalovic/img/box.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height:600px;
-    position:relative;
-    top:-100px;
-    z-index:9999;
+.width100{
+    width:100%;
 }
-.textInTeeth{
-    top:200px;
-    left:215px;
+.slikaLogoa{
+    background:url("../img/img12.jpg");
+    background-size:cover;
+    height: 376px;
 }
-.socials{
-    position:absolute;
-    bottom:0;
-    left:0;
-}
-.socials>div{
-    margin-right:20px;
-}
-.socials>div i {
-    margin-left:40px;
-}
-.face{
-    color:#3A5795;
-    cursor: pointer;
-    font-size:60px !important;
-}
-.gplus{
-    color:#DD4E42;
-    cursor: pointer;
-    font-size:60px !important;
-}
-.ln{
-    color:#0077B5;
-    font-size:60px !important;
-    cursor: pointer;
-}
-.face:hover, .gplus:hover, .ln:hover{
-    color:white;
-    font-size:70px;
-}
-.contactField{
-    position:fixed;
-    bottom:0;
-    right:10px;
-    width:300px;
-    height:300px;
-    background:rgba(37,125,113,1);
-}
-.contact-footer{
-    background: url(../../ordinacijaMDjalovic/img/contact-footer-bg.png) top center;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    color: white;
-    text-align: center;
-    font-size: 1.15em;
-    font-weight: bold;
-}
-.slider ul.slides li img{
-    border-radius: 10px;
-}
-.slider ul.slides {
-    background-color:inherit !important;
-}
-.card.small .card-content {
-    height: 50px !important;
-    padding:0 !important;
-}
-.card.small .card-image {
-    height: 250px !important;
-}
-.light-green-darker{
-    background-color: #528e4c !important;
-
-}
-.radius20{
-    border-radius:20px !important;
-}
-.bottom {
-    top: 65% !important;
-}
-.location {
-    background: url(../../ordinacijaMDjalovic/img/mapa-ordinacije.png) no-repeat;
-    background-size: cover;
-}
-.card-min-height{
-    min-height:225px;
-}
-.pull-down{
-    position: absolute;
-    bottom: 0;
-    left: 40px;
-}
-.spec-green{
-    color:#528e4c !important;
-}
-.card-background{
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(8%, rgba(246,246,246,1)), color-stop(100%, rgba(97,188,93,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 8%, rgba(97,188,93,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61bc5d', GradientType=0 );
-    border-radius: 20px;
-    color:#A1DCE3 !important;
-}
-.checklist{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 60px;
-}
-.ceo{
-    width:80px;
+.velikaSlika{
+    background: url("../img/image2.jpg") no-repeat;
+    background-size: 64% auto;
+    height:400px;
+    background-position: right;
 }
