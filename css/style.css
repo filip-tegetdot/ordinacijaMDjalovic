@@ -1,18 +1,21 @@
+html,body{
+    height:100%;
+    font-size:16px !important;
+}
 .nav-tabs {
     border-bottom: 1px solid skyblue;
 }
 .eliptical{
-    background: deepskyblue;
-    height:952px;
+    background: aquamarine;
     border-top-left-radius: 92% 59%;
     position:relative;
     z-index: 1;
-    top:-650px;
+    top:-575px;
 }
 .cetkica{
     position: relative;
-    z-index: -1;
-    top:20px;
+    z-index: 9999;
+    top: -125px;
 }
 a:hover{
     text-decoration: none;
@@ -29,9 +32,12 @@ a:hover{
     border-radius:7px;
 }
 .wave{
-    top: -650px;
+    top: -665px;
     padding:0;
-    background: deepskyblue;
+    background-image: url("../img/whitewave.png");
+    background-size:cover;
+    height:200px;
+    z-index: 9999;
 }
 .wave img{
     width:100%;
@@ -53,13 +59,56 @@ a:hover{
     width:100%;
 }
 .slikaLogoa{
-    background:url("../img/img12.jpg");
-    background-size:cover;
     height: 376px;
+    position: relative;
+    top: -576px;
+    background-color: aquamarine;
 }
 .velikaSlika{
-    background: url("../img/image2.jpg") no-repeat;
+    background: url("../img/kids.png") no-repeat;
     background-size: 64% auto;
     height:400px;
     background-position: right;
+}
+.centarEstetskeHirurgije{
+    z-index:-1;
+    height: 50px;
+    color: green;
+    background-color: aquamarine;
+    border-radius: 20px;
+    position: relative;
+    vertical-align: top;
+    padding-top:14px;
+    padding-left:50px;
+}
+.maliZub{
+    width: auto;
+    height:100px;
+    position:relative;
+    top:-32px;
+    z-index:9999;
+}
+.footerSlika{
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+}
+.submeni a{
+    font-size: 1.5em;
+    padding: 2px 5px 10px 3px;
+}
+.text-white{
+    color:white;
+}
+.yellowgreen{
+    color:yellowgreen;
+    text-shadow: 7px 5px white;
+}
+.dynamicContent{
+    margin-top:30px;
+    min-height:300px;
+}
+.container{
+    max-height: 1000px !important;
 }
