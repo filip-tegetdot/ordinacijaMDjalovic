@@ -2,16 +2,16 @@
  * Created by filip on 03/02/15.
  */
 ordinacija.controller("MainCtrl",['$scope',function($scope){
-    $scope.navigation = ["Naslovna","Ordinacija","Pitanja i Saveti","Usluge","Kontakt"];
+    $scope.navigation = ["Насловна","Ординација","Питања и савети","Услуге","Контакт"];
     $scope.navigation = [
-        {name:'Naslovna',url:"#/"},
-        {name:'Ordinacija',url:"#/ordinacija"},
-        {name:'Pitanja i Saveti',url:"#/pitanja"},
-        {name:'Usluge',url:"#/usluge"},
-        {name:'Kontakt',url:"#/kontakt"},
+        {name:'Насловна',url:"#/"},
+        {name:'Ординација',url:"#/ordinacija"},
+        {name:'Питања и савети',url:"#/pitanja"},
+        {name:'Услуге',url:"#/usluge"},
+        {name:'Контакт',url:"#/kontakt"},
     ];
     $scope.selectNav = function(navItem){
         $scope.selectedItem = navItem;
     }
-    $scope.subNavItems = ["Dijagnostika","Estetska hirurgija","Decja preventivna hirurgija","Paradontologija","Stolatoloska protetika","implatanti","Oralna hirurgija","Ozon","Ortodoncija","Izbeljivanje"];
+    $scope.subNavItems = ["Дијагностика","Естетска хирургија","Дечја превентивна хирургија","Парадонтологија","Стоматолошка протетика","Имплатанти","Орална хирургија","Озон","Ортодонција","Избељивање"];
 }]);

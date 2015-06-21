@@ -1,12 +1,13 @@
 html,body{
     height:100%;
     font-size:16px !important;
+    background: #f8f3ed;
 }
 .nav-tabs {
     border-bottom: 1px solid skyblue;
 }
 .eliptical{
-    background: aquamarine;
+    background: #7abe78;
     border-top-left-radius: 92% 59%;
     position:relative;
     z-index: 1;
@@ -16,6 +17,7 @@ html,body{
     position: relative;
     z-index: 9999;
     top: -125px;
+    height:433px;
 }
 a:hover{
     text-decoration: none;
@@ -30,6 +32,10 @@ a:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73e8dac7', endColorstr='#a8ffffff',GradientType=1 ); /* IE6-9 */
     border: 2px solid #c8eff3;
     border-radius:7px;
+    position: relative;
+    top: -129px;
+    left: 2px;
+    z-index: 999999;
 }
 .wave{
     top: -665px;
@@ -56,30 +62,36 @@ a:hover{
     position:absolute !important;
 }
 .width100{
-    width:100%;
+    width: 93%;
+    position: relative;
+    left: -50px;
 }
 .slikaLogoa{
     height: 376px;
     position: relative;
     top: -576px;
-    background-color: aquamarine;
+    background-color: #7abe78;
 }
 .velikaSlika{
-    background: url("../img/kids.png") no-repeat;
-    background-size: 64% auto;
     height:400px;
-    background-position: right;
 }
 .centarEstetskeHirurgije{
     z-index:-1;
-    height: 50px;
+    height: 32px;
     color: green;
-    background-color: aquamarine;
+    background-color: #7abe78;
     border-radius: 20px;
     position: relative;
     vertical-align: top;
-    padding-top:14px;
-    padding-left:50px;
+    padding-top:3px;
+    padding-left:73px;
+    top:34px;
+}
+.centarEstetskeHirurgije span{
+    position: relative;
+    left:40px;
+    font-size: 20px;
+    font-weight: 800;
 }
 .maliZub{
     width: auto;
@@ -97,18 +109,39 @@ a:hover{
 .submeni a{
     font-size: 1.5em;
     padding: 2px 5px 10px 3px;
+    color:#039be5;
 }
 .text-white{
     color:white;
 }
-.yellowgreen{
-    color:yellowgreen;
+.seagreen{
+    color:#7abe78;
     text-shadow: 7px 5px white;
 }
 .dynamicContent{
-    margin-top:30px;
+    margin-top:126px;
     min-height:300px;
+}
+.dynamicContent h3{
+    font-size: 3.4rem;
 }
 .container{
     max-height: 1000px !important;
+}
+.margin45{
+    margin-left: -45px;
+}
+.happyTeeth{
+    width: 104%;
+    position: relative;
+    left: -16px;
+    top: -41px;
+}
+.logo{
+    width:69%;
+    position:relative;
+    top:-5px;
+}
+.h6{
+    font-size:2rem;
 }
