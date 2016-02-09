@@ -9,14 +9,8 @@ html,body{
 .eliptical{
     background: #7abe78;
     border-top-left-radius: 92% 59%;
-    position:relative;
-    z-index: 1;
-    top:-652px;
 }
 .cetkica{
-    position: relative;
-    z-index: 9999;
-    top: -125px;
     height:433px;
 }
 a:hover{
@@ -32,34 +26,7 @@ a:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73e8dac7', endColorstr='#a8ffffff',GradientType=1 ); /* IE6-9 */
     border: 2px solid #c8eff3;
     border-radius:7px;
-    position: relative;
-    top: -129px;
     left: 2px;
-    z-index: 999999;
-}
-.wave{
-    top: -665px;
-    padding:0;
-    background-image: url("../img/whitewave.png");
-    background-size:cover;
-    height:200px;
-    z-index: 9999;
-}
-.wave img{
-    width:100%;
-    height: auto;
-}
-.deepskyblue{
-    background: deepskyblue;
-    height:93px;
-    top:-650px;
-}
-.teeth{
-    width:auto !important;
-    right:70px;
-    top:70px;
-    z-index: 9999;
-    position:absolute !important;
 }
 .width100{
     width: 93%;
@@ -68,47 +35,8 @@ a:hover{
 }
 .slikaLogoa{
     height: 376px;
-    position: relative;
-    top: -650px;
-    background-color: #7abe78;
-    background-image: url("../img/happyteets.png");
-    background-repeat: no-repeat;
+    background: #7abe78 url("../img/happyteets.png") no-repeat center;
     background-size: 68% auto;
-    background-position: center;
-}
-.velikaSlika{
-    height:400px;
-}
-.centarEstetskeHirurgije{
-    z-index:-1;
-    height: 32px;
-    color: green;
-    background-color: #7abe78;
-    border-radius: 20px;
-    position: relative;
-    vertical-align: top;
-    padding-top:3px;
-    padding-left:73px;
-    top:34px;
-}
-.centarEstetskeHirurgije span{
-    position: relative;
-    left:40px;
-    font-size: 20px;
-    font-weight: 800;
-}
-.maliZub{
-    width: auto;
-    height:100px;
-    position:relative;
-    top:-32px;
-    z-index:9999;
-}
-.footerSlika{
-    width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 100px;
 }
 .submeni a{
     font-size: 1.5em;
@@ -117,20 +45,6 @@ a:hover{
 }
 .text-white{
     color:white;
-}
-.seagreen{
-    color:#7abe78;
-    text-shadow: 7px 5px white;
-}
-.dynamicContent{
-    margin-top:270px;
-    min-height:300px;
-}
-.dynamicContent h3{
-    font-size: 3.4rem;
-}
-.container{
-    max-height: 1000px !important;
 }
 .margin45{
     margin-left: -45px;
@@ -154,16 +68,13 @@ a:hover{
     height: 86px;
     background-size: cover;
     position: relative;
-    top: -216px;
     left: -10px;
 }
 .stiker{
-    background-image: url("../img/paper-notes.png");
-    background-size: 50% auto;
-    background-repeat: no-repeat;
+    background: url("../img/paper-notes.png") no-repeat;
+    background-size: contain;
     height:400px;
     position:relative;
-    top:-50px;
 }
 .poruka{
     position: relative;
